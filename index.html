@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descubre las maravillas de Villa de Leyva</title>
+  <style>
+    :root{--terracota:#98563f;--cafe:#49352b;--crema:#fffaf2;--dorado:#d6a45b;--verde:#526b55}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;color:var(--cafe);font-family:Arial,Helvetica,sans-serif;line-height:1.7;background:#d8c6aa url('fondo-villa.png') center/cover fixed no-repeat}
+    body:before{content:"";position:fixed;inset:0;background:rgba(38,28,20,.48);z-index:-1}
+    header{min-height:340px;padding:45px 20px 65px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:white;text-shadow:0 2px 10px #30241d}
+    header h1{font: bold clamp(2.1rem,5vw,4rem)/1.15 Georgia,serif;margin:10px 0}
+    header p{font-size:1.1rem;margin:8px 0 22px}
+    nav{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+    nav a,.button{display:inline-block;padding:10px 17px;border-radius:28px;background:var(--terracota);color:white;text-decoration:none;font-weight:bold;border:1px solid #ffffff55}
+    nav a:hover,.button:hover{background:var(--verde)}
+    main{width:min(1100px,calc(100% - 30px));margin:-25px auto 40px}
+    section,details{margin:22px 0;padding:clamp(20px,4vw,36px);border-radius:20px;background:rgba(255,250,242,.97);box-shadow:0 10px 30px #19120c33}
+    h2{margin-top:0;color:var(--terracota);font: bold clamp(1.55rem,3vw,2.1rem) Georgia,serif}
+    h3{color:var(--verde);margin:0 0 8px}
+    p{margin:9px 0;text-align:justify}
+    .intro-image{display:block;width:min(520px,100%);max-height:340px;object-fit:cover;margin:22px auto;border-radius:16px;box-shadow:0 8px 22px #0003}
+    .place{display:grid;grid-template-columns:1fr .9fr;gap:24px;align-items:center;padding:22px 0;border-bottom:1px solid #e5d8c6}
+    .place:last-of-type{border-bottom:0}
+    .place img{width:100%;max-width:420px;max-height:270px;object-fit:cover;border-radius:15px;box-shadow:0 7px 18px #0002;justify-self:center}
+    .place:nth-of-type(even) img{order:-1}
+    details{padding:0;overflow:hidden}
+    summary{cursor:pointer;padding:20px 26px;background:#ead8bd;color:var(--cafe);font-size:1.15rem;font-weight:bold}
+    details[open] summary{border-bottom:1px solid #ddc7a7}
+    .details-content{padding:22px 26px 28px}
+    .hotel-grid,.food-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}
+    .mini-card{background:#f5ecdf;border-radius:15px;padding:18px;min-width:0}
+    .mini-card h3{margin-top:0}
+    .map{width:100%;height:260px;border:0;border-radius:12px;margin-top:12px}
+    .center{text-align:center;margin-top:22px}
+    .center p{text-align:center}
+    .game-frame{width:100%;min-height:600px;border:0;border-radius:14px}
+    footer{text-align:center;padding:25px 15px;color:white;background:rgba(48,35,27,.94)}
+    footer p{text-align:center;margin:4px}
+    @media(max-width:760px){body{background-attachment:scroll}.place{grid-template-columns:1fr}.place img,.place:nth-of-type(even) img{order:0}.hotel-grid,.food-grid{grid-template-columns:1fr}.game-frame{min-height:520px}header{min-height:300px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div>BOYACÁ · COLOMBIA</div>
+    <h1>DESCUBRE LAS MARAVILLAS DE VILLA DE LEYVA 🦕</h1>
+    <p>Historia, cultura, naturaleza y tradición en un solo destino.</p>
+    <nav aria-label="Navegación principal">
+      <a href="#conoce">Conoce Villa de Leyva</a>
+      <a href="#lugares">Lugares a visitar</a>
+      <a href="#hoteles">Hoteles</a>
+      <a href="#gastronomia">Gastronomía</a>
+      <a href="#actividad">Actividad</a>
+    </nav>
+  </header>
+  <main>
+    <section id="conoce">
+      <h2>¿Qué bellezas se encuentran en esta región? 🖼️</h2>
+      <p>El tiempo parece haberse detenido en Villa de Leyva, un municipio boyacense que conserva en su arquitectura las muestras más auténticas del pasado colonial.</p>
+      <p>Este pueblo es, sin duda, uno de los más bellos de Colombia, y es muy famoso por su importancia histórica y por su magnífica plaza, que le valieron ser reconocido como Monumento Nacional en 1954.</p>
+      <p>De hecho, la Plaza Mayor de Villa de Leyva es la más grande de Colombia y una de las más imponentes de Suramérica con sus 14 mil metros cuadrados.</p>
+      <p>Además de su arquitectura colonial, a Villa de Leyva la caracterizan sus variados paisajes rurales, que van desde la zona de páramo hasta la desértica.</p>
+      <p>Debido a su gran oferta, Villa de Leyva es ideal para encontrarse con la historia, la ciencia, el arte, la cultura y la naturaleza.</p>
+      <img class="intro-image" src="https://colombia.travel/sites/default/files/inline-images/Vista%20noctura%202%20plaza%20central%20de%20villa%20de%20leyva%2C%20Boyaca_%20CCortesia%20Mario%20Carvajal%20www.mariocarvajal.com_.jpg" alt="Plaza central de Villa de Leyva">
+      <p>En primer lugar, hay que ponerse un calzado cómodo y disponerse a recorrer el municipio para tener una cita con la historia e, incluso, con la prehistoria.</p>
+      <p>En Villa de Leyva encontrarás la increíble Plaza Mayor, que se caracteriza por su aspecto colonial, con suelo de piedra, una pila en el centro y edificaciones que conservan su arquitectura original. En estas, se sitúan los despachos de la Alcaldía, pero también museos, hoteles y pasajes comerciales.</p>
+      <p>También está junto a la Plaza Mayor el imponente Templo Parroquial de Nuestra Señora del Rosario, construido en 1604. La edificación exhibe una arquitectura del barroco colonial y conserva retablos tallados en madera y recubiertos en oro.</p>
+      <p>Pero si sales del casco histórico podrás encontrar atractivos adicionales, como el Museo Prehistórico, que cuenta con esculturas de dinosaurios y con fósiles hallados en la zona.</p>
+      <p>También está el Museo Paleontológico, que resguarda fósiles del periodo Cretácico. Cuenta con 2.425 piezas en colección y 441 piezas en exhibición. Además, la casa que lo alberga constituye una joya arquitectónica colonial de 1570.</p>
+      <p>Así mismo, Villa de Leyva tiene el Museo El Fósil, fundado en 1977 por iniciativa de los campesinos de la región, luego de que en labores agrícolas fuera descubierto un ejemplar de pliosaurio, bautizado como Kronosaurus boyacensis hampe. Este ejemplar es el fósil de pliosaurio más completo encontrado hasta el momento en el mundo.</p>
+      <p>Por último, te recomendamos recorrer la zona desértica para llegar hasta los maravillosos Pozos Azules, que se encuentran a solo un par de kilómetros de Villa de Leyva.</p>
+      <p>Se trata de pozos artificiales que, aunque están en un terreno de propiedad privada, se pueden visitar si se paga la entrada.</p>
+      <p>Estos pozos ofrecen un paisaje incomparable, pues el azul verdoso de las aguas cambia con el clima y brinda un contraste único entre desierto y naturaleza. Es, sin duda alguna, uno de los lugares imperdibles de Villa de Leyva.</p>
+    </section>
+
+    <section id="lugares">
+      <h2>Lugares a visitar 👣</h2>
+      <article class="place">
+        <div><h3>Plaza principal o Plaza Mayor</h3><p>Con 14.000 metros cuadrados, es considerada la plaza más grande del país. Su aspecto colonial, representado en los pisos de piedra constituye una de sus características principales. En el centro se destaca una pila tallada en piedra que siglos atrás, abastecía de agua potable a los habitantes de la localidad. Alrededor de la plaza se ubican el despacho de la Alcaldía, museos, hoteles, centros comerciales, almacenes de artesanías, y otras edificaciones que en su mayoría, conservan la arquitectura de la época colonial.</p></div>
+        <img src="https://www.villadeleyva-boyaca.gov.co/MiMunicipio/PublishingImages/Paginas/Sitios-de-Interes/Plaza%20Principal%20-%20Foto%20Fernando%20Bello%20Mendoza.JPG" alt="Plaza central de Villa de Leyva">
+      </article>
+      <article class="place">
+        <div><h3>Templo parroquial</h3><p>Fue construido en 1.604. En la Edificación, de tipo barroco colonial, se conservan los retablos tallados en madera y recubiertos en oro. Sus rasgos arquitectónicos imitan las basílicas y catedrales existentes en Granada y Sevilla. Cuadros típicos de la Colonia, pintados en su mayoría por el artista bogotano Gregorio Velásquez de Arce y Caballos, adornan el recinto. El templo es reconocido históricamente por albergar el Primer Congreso de la Provincias Unidas de la Nueva Granada, en 1.812, dos años después del Grito de Independencia Nacional. Está ubicado en el oriente de la Plaza Principal.</p></div>
+        <img src="https://www.villadeleyva-boyaca.gov.co/MiMunicipio/PublishingImages/Paginas/Sitios-de-Interes/Templo%20Parroquial%20Foto%20Fernando%20Bello%20Mendoza%20%20peq2.JPG" alt="Templo parroquial de Nuestra Señora del Rosario">
+      </article>
+      <article class="place">
+        <div><h3>Casa museo Antonio Ricaurte</h3><p>En esta casa nació el capitán Antonio Ricaurte, el 10 de junio de 1786. Estuvo abandonada hasta 1910 año en el que el gobierno nacional tomo posesión de ella y la utilizó como sede del Colegio Agrario Antonio Ricaurte hasta mediados del siglo XX. En 1968 la Fuerza Aérea Colombiana, que había adoptado al prócer como patrono, empezó a reconstruir la casa para convertirla en museo. La casa se constituyó como Patrimonio Cultural de la Nación. El 25 de marzo de 1970 abrió sus puertas en la conmemoración de la muerte de este héroe, símbolo de la aviación militar en Colombia.</p></div>
+        <img src="https://www.villadeleyva-boyaca.gov.co/MiMunicipio/PublishingImages/Paginas/Sitios-de-Interes/Museo%20de%20Antonio%20Ricarte%20Foto%20Fernando%20Bello%20Mendoza%20(5).JPG" alt="Casa museo Antonio Ricaurte">
+      </article>
+      <article class="place">
+        <div><h3>Observatorio astronómico</h3><p>Es un lugar ideal para observar el cielo, las profundidades del universo, disfrutar de noches espectaculares realizando reconocimiento de constelaciones, observación de planetas, nebulosas, galaxias, estrellas fugaces, seguimiento de diversos fenómenos y maravillarse con historias míticas sobre el cosmos. Cuenta con Telescopios para la observación de la bóveda celeste, el gran reflector Elkeve telescopio para cielo profundo, el coronado con filtro de hidrogeno para observar manchas y llamaradas solares. También encontrarás Kosmos, Museo del Espacio, especializado en arqueo astronomía, exobiología, historia del vuelo, los viajes espaciales, y una colección de meteoritos única en Colombia y un planetario ideal para proyecciones.</p></div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5DFpqJBQ0sYe5QmRR18_56TffAFP_Rw3ONKGAJE7oXwNxwuuAbWdMgPM&s=10" alt="Observatorio astronómico">
+      </article>
+      <p class="center"><a class="button" href="https://www.villadeleyva-boyaca.gov.co/MiMunicipio/paginas/sitios-de-interes.aspx" target="_blank" rel="noopener">Visita esta página para conocer más</a></p>
+    </section>
+
+    <details id="hoteles">
+      <summary>🏨 HOTELES EN VILLA DE LEYVA</summary>
+      <div class="details-content"><div class="hotel-grid">
+        <article class="mini-card"><h3>Casa Boutique Villa de Leyva - Adults only</h3><ul><li>Muy elegida por parejas</li><li>Disfruta de la mañana con desayunos deliciosos.</li><li>Estacionamiento cómodo y seguro en las instalaciones, un servicio poco común en la zona.</li><li>Buena ubicación</li></ul><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.553175993548!2d-73.5219779!3d5.6327712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e41d70dd81dfdf5%3A0x24af75b193193421!2sCASA%20BOUTIQUE%20VILLA%20DE%20LEYVA!5e0!3m2!1ses-419!2sco!4v1793744471763!5m2!1ses-419!2sco" title="Mapa Casa Boutique Villa de Leyva" loading="lazy" allowfullscreen></iframe></article>
+        <article class="mini-card"><h3>La Rioja</h3><ul><li>Empieza el día con un delicioso desayuno continental, algo poco común en la zona.</li><li>Cerca a pie de Plaza Mayor</li><li>Acepta mascotas</li><li>Estacionamiento gratis</li></ul><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.5379018276835!2d-73.52551289999994!3d5.635005500000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e41d753bde52cfb%3A0x100c7b9e82012ebc!2sHotel%20Posada%20La%20Rioja!5e0!3m2!1ses-419!2sco!4v1793744558931!5m2!1ses-419!2sco" title="Mapa Hotel Posada La Rioja" loading="lazy" allowfullscreen></iframe></article>
+        <article class="mini-card"><h3>Hotel Boutique Cenit</h3><ul><li>Muy elegida por parejas</li><li>Disfruta de la mañana con desayunos deliciosos.</li><li>Spa</li><li>Lavandería</li></ul><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.5639858755485!2d-73.52446649999999!3d5.631189400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e41d764349dcea5%3A0xdf6273f01c347cd4!2sHotel%20Boutique%20Cenit!5e0!3m2!1ses-419!2sco!4v1793744597690!5m2!1ses-419!2sco" title="Mapa Hotel Boutique Cenit" loading="lazy" allowfullscreen></iframe></article>
+      </div></div>
+    </details>
+
+    <details id="gastronomia">
+      <summary>🍲 GASTRONOMÍA TÍPICA</summary>
+      <div class="details-content"><div class="food-grid">
+        <article class="mini-card"><h3>Cocido boyacense</h3><ul><li>Un guiso tradicional preparado con diversos tipos de papa criolla y sabanera, mazorca, cubios, rubas, habas y diferentes carnes (res, cerdo y pollo).</li></ul></article>
+        <article class="mini-card"><h3>Cuchuco de trigo con espinazo de cerdo</h3><ul><li>Una sopa espesa y nutritiva hecha con trigo triturado, papa, alberja y espinazo de cerdo.</li></ul></article>
+        <article class="mini-card"><h3>Mazamorra chiquita</h3><ul><li>Una sopa tradicional a base de maíz pelado, carne de res, cordero, verduras y hierbas locales.</li></ul></article>
+      </div></div>
+    </details>
+
+    <section id="actividad">
+      <h2>Actividad: turismo sostenible 🎯</h2>
+      <p class="center">Pon a prueba tus conocimientos con esta actividad interactiva.</p>
+      <iframe class="game-frame" allow="fullscreen; autoplay; allow-top-navigation-by-user-activation" allowfullscreen title="Juego de turismo sostenible" src="https://es.educaplay.com/juego/25434885-turismo_sostenible.html"></iframe>
+    </section>
+  </main>
+  <footer><p><strong>Descubre las maravillas de Villa de Leyva</strong></p><p>© Todos los derechos reservados</p><p>Creado por: Carol S. - 2026</p></footer>
+</body>
+</html>
